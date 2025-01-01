@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="../../libs/p5.min.js"></script>
+
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-container {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: rotateContainer 7s linear infinite;
+        }
+
+        .rotating-text {
+            position: absolute;
+            top: 63px;
+            font-family: Silvers;
+            color: var(--base-light);
+            letter-spacing: 1px;
+            white-space: nowrap;
+
+        }
+        
+        .rotating-text span {
+            position: absolute;
+            transform-origin: center;
+        }
+
+        @keyframes rotateContainer {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-container" id="text-container">
+        <div class="rotating-text" id="rotating-text"></div>
+    </div>
+
+    <script>
+        function preload() {
+            img = loadImage('../../imgs/index/planet-textures/neighbors-planet-texture.gif');
+        }
+
+        function setup() {
+            createCanvas(175, 175, WEBGL);
+        }
+  
+        function draw() {
+            rotateY(frameCount * 0.05);
+            rotateX(frameCount * -0.015);
+            rotateZ(frameCount * 0.001);
+            noStroke();
+            clear();
+            texture(img);
+            sphere(45, 9, 9);
+        }
+
+        function createRotatingText(text, radius, kerning) {
+            const rotatingTextElement = document.getElementById('rotating-text');
+            rotatingTextElement.innerHTML = ''; // Clear previous text
+            
+            // Reverse the text
+            const reversedText = text.split('').reverse().join('');
+            const numberOfCharacters = reversedText.length;
+            const totalAngle = (numberOfCharacters - 1) * kerning;
+            const startAngle = -totalAngle / 2;
+
+            for (let i = 0; i < numberOfCharacters; i++) {
+                const span = document.createElement('span');
+                span.innerText = reversedText[i];
+
+                const angle = startAngle + i * kerning;
+                const x = radius * Math.cos(angle);
+                const y = radius * Math.sin(angle);
+
+                // Flip the text upside down by adding 180 degrees to the rotation
+                span.style.transform = `translate(${x}px, ${y}px) rotate(${(angle * 180 / Math.PI) + 90}deg) rotate(180deg)`;
+                rotatingTextElement.appendChild(span);
+            }
+        }
+
+        createRotatingText('Neo Neighbors', 60, .19); // Call function with text, radius, and kerning
+    </script>
+    
+</body>
+</html>

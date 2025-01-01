@@ -1,0 +1,149 @@
+:root {
+    --dark-1: #000000;
+    --dark-2: #121112;
+    --dark-3: #1e1e1c;
+    --dark-4: #272727;
+    --dark-5: #343333;
+    --dark-6: #424242;
+    --dark-7: #6d6d6e;
+    --dark-8: #747573;
+}
+
+body {
+    background-color: var(--dark-6);
+    background-image: url(../imgs/blog/blog-desktop-bg.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    /* background-image: url(../imgs/blog/blog-bg-texture.png);
+    background-size: 100vw 100vh; */
+}
+
+header {
+    width: 100vw;
+    height: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+#index-planet-section {
+    z-index: 4;
+    transform: translate(66px, -55px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    margin: 2em 0 2em 6vw;
+}
+
+.text-post {
+    width: 95vw;
+    max-width: 72em;
+    margin-left: 2.5vw;
+    background-color: hsl(0, 0%, 93%, .8);
+    color: var(--base-dark);
+    padding: 2.5em 4em;
+    font-size: .9em;
+    font-family: Megrath;
+    line-height: 1.8em;
+    outline: 2px solid var(--base-dark);
+}
+
+.date {
+    font-size: 1.2em;
+}
+
+.image-post {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid var(--base-dark);
+    background-color: 	hsl(0, 0%, 5%, .6);
+}
+
+.horizontal {
+    width: 50vw;
+}
+
+.vertical {
+    width: 25vw;
+}
+
+.vertical-section {
+    display: flex;
+    flex-direction: row;
+}
+
+#mobile-bg {
+    display: none;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#blog-obj {
+    position: fixed;
+    width: 575px;
+    height: 575px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/* MOBILE MEDIA QUERY */
+
+@media screen and (max-width: 1050px) { 
+
+    body {
+        max-width: 100vw;
+        /* overflow: hidden */
+    }
+
+    #mobile-bg {
+        display: inherit;
+    }
+
+    main {
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+
+    .text-post {
+        padding: 1.5em 1.25em;
+        margin-top: .9em;
+        background-color: hsl(0, 0%, 93%, .6);
+    }
+
+    .image-post {
+        width: 100vw;
+        margin-top: .9em;
+        display: flex;
+        flex-direction: column;
+        outline: none;
+        background-color: 	hsl(0, 0%, 5%, .6);
+    }
+    
+    .horizontal {
+        width: 100vw;
+    }
+    
+    .vertical {
+        width: 50vw;
+    }
+
+    .vertical-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #blog-obj {
+        display: none;
+    }
+}

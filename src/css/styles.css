@@ -1,0 +1,55 @@
+@font-face {
+    font-family: OldNewspaperTypes;
+    src: url(../fonts/OldNewspaperTypes.ttf);
+}
+
+@font-face {
+    font-family: Silvers;
+    src: url(../fonts/SILVERS.ttf);
+}
+
+@font-face {
+    font-family: CourierPolski1941;
+    src: url(../fonts/CourierPolski1941.ttf);
+}
+
+@font-face {
+    font-family: DePixel;
+    src: url(../fonts/DePixel.ttf);
+}
+
+@font-face {
+    font-family: DEADCRT;
+    src: url(../fonts/DEADCRT.ttf);
+}
+
+@font-face {
+    font-family: Akira-Expanded;
+    src: url(../fonts/akira-expanded.otf);
+}
+
+@font-face {
+    font-family: Megrath;
+    src: url(../fonts/MEGRATH.otf);
+}
+
+:root {
+    --base-dark: #0E0E0E;
+    --base-light: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    scroll-behavior: smooth;
+}
+
+.iframe-span-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}

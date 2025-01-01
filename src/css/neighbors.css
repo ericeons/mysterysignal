@@ -1,0 +1,35 @@
+body {
+    width: 222px;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-image: url(../imgs/neighbors/neighbors-bg.gif);
+}
+
+#indieweb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+}
+
+content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+    row-gap: 4px;
+    margin-bottom: 2em;
+}
+
+p {
+    font-family: CourierPolski1941;
+    text-decoration: underline;
+    text-align: center;
+    font-size: .75em;
+    width: 200px;
+    margin: 1.5em 0 .5em 0;
+}
+
+img {
+    width: 88px;
+}

@@ -1,0 +1,213 @@
+body {
+    background-color: blue;
+    color: navy;
+}
+
+iframe {
+    position: absolute;
+    right: 17em;
+    top: -4.5em;
+    z-index: 2;
+}
+
+#hyperlinks-bg {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#hyperlinks-title-text {
+    width: 30vw;
+    position: absolute;
+    top: 4vh;
+    left: 9vw;
+    z-index: 2;
+    max-width: 40em;
+}
+
+#border-main {
+    position: absolute;
+    width: 96vw;
+    height: 98em;
+    border: 1px solid #eeeeee;
+    margin: 5em 0 0 2vw;
+    border-top: transparent;
+}
+
+#faux-border-left {
+    position: absolute;
+    width: 5vw;
+    height: 5em;
+    margin-left: 2vw;
+    border: 1px solid #eeeeee;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+#faux-border-right {
+    position: absolute;
+    width: 58vw;
+    height: 5em;
+    right: 2vw;
+    border: 1px solid #eeeeee;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+#faux-margin-bottom {
+    height: 5vh;
+    width: 100vw;
+    position: absolute;
+    top: 103em;
+}
+
+#favorites-section {
+    right: 11vw;
+    top: 13em;
+    max-width: 25em;
+}
+
+#cylinder-obj {
+    position: absolute;
+    left: 0;
+    top: 11em;
+    z-index: -1;
+}
+
+#ellipsoid-obj {
+    position: absolute;
+    right: 17vw;
+    top: 44em;
+    z-index: -1;
+}
+
+#cone-obj {
+    position: absolute;
+    right: 6vw;
+    top: 95em;
+    z-index: -1;
+}
+
+#vitruvian-ascii {
+    position: absolute;
+    z-index: -1;
+    left: 3vw;
+    top: 9em;
+}
+
+@keyframes tao-anim {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+#tao-ascii {
+    position: absolute;
+    z-index: -1;
+    left: 5vw;
+    width: 9em;
+    height: 9em;
+    top: 91em;
+    animation-name: tao-anim;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#favorites-ascii {
+    transform: translateX(-11em);
+}
+
+#videos-section {
+    left: 7vw;
+    top: 27em;
+    max-width: 35em;
+}
+
+#videos-ascii {
+    transform: translateX(-11em);
+}
+
+#animation-divider {
+    outline: 1px solid var(--base-light);
+    width: 5.5em;
+    text-align: center;
+    padding: .2em;
+    margin-bottom: .7em;
+    margin-left: 5em;
+}
+
+#games-section {
+    max-width: 29em;
+    left: 27vw;
+    top: 72em;
+}
+
+#games-ascii {
+    transform: translateX(4em);
+}
+
+#tools-section {
+    max-width: 18em;
+    right: 9vw;
+    top: 56em;
+}
+
+#tools-ascii {
+    transform: translateX(-1em);
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    position: absolute;
+    color: var(--base-light);
+    font-family: DePixel;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.subsection img {
+    height: 4em;
+    margin-bottom: 1.3em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li p {
+    margin-bottom: .7em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: navy;
+}
+
+#hotline-info {
+    position: absolute;
+    width: 21em;
+    padding: .2em;
+    text-align: center;
+    left: 21vw;
+    top: 14em;
+}
+
+#hotline-info p {
+    color: var(--base-light);
+    font-family: DePixel;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+#hotline-info a {
+    text-decoration: underline;
+}

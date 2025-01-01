@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../libs/p5.min.js"></script>
+    <style>
+        body {
+            width: 600px;
+            height: 430px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function setup() {
+    createCanvas(600, 430, WEBGL);
+    }
+
+    function draw() {
+    clear();
+    rotateY(frameCount * -0.025);
+    rotateZ(frameCount * 0.02);
+    noFill();
+    stroke(0, 0, 128);
+    ellipsoid(100, 200, 300, 6, 3);
+    }
+    </script>
+    
+</body>
+</html>

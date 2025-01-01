@@ -1,0 +1,368 @@
+/* DESKTOP MEDIA QUERY */
+
+@media screen and (min-width: 1050px) {
+    body {
+        background-image: url(../imgs/index/index-bg.gif);
+    }
+}
+
+
+/* MAIN STYLING */
+
+body {
+    background-color: var(--base-dark);
+    overflow: hidden;
+}
+
+#mobile-background {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -5;
+}
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 1em;
+}
+
+#logo {
+    width: 30em;
+}
+
+#change-subtitle-btn-wrap {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#change-subtitle-btn {
+    margin: .3em auto 0 auto;
+    z-index: 5;
+    width: 31em;
+    height: 111px;
+}
+
+header h1 {
+  color: var(--base-light);
+  text-align: center;
+  font-size: 1.3em;
+  font-family: OldNewspaperTypes;
+  margin-top: -2px;
+}
+
+/* PLANETS SECTION */
+
+#about-planet {
+    position: absolute;
+    top: 14vh;
+    left: -3em;
+    z-index: -2;
+}
+
+#channels-planet {
+    position: absolute;
+    left: 27vw;
+    top: 63vh;
+    z-index: -2;
+}
+
+#hyperlinks-planet {
+    position: absolute;
+    right: 15vw;
+    top: 44vh;
+}
+
+#guestbook-planet {
+    position: absolute;
+    left: 20vw;
+    top: 24vh;
+}
+
+#blog-planet {
+    position: absolute;
+    left: 5vw;
+    bottom: 12vh;
+    z-index: -2;
+}
+
+#neighbors-planet {
+    position: absolute;
+    right: 3vw;
+    top: 9vh;
+}
+
+@keyframes zines-planet-anim {
+    0% {opacity: 0; left: -250px; top: -250px;}
+    50% {opacity: 0; left: 30vw; top: -250px;}
+    51% {opacity: 1; left: 30vw; top: -200px;}
+    71% {opacity: 1; left: 120vw; top: 66vh;}
+    72% {opacity: 0; left: 120vw; top: 66vh;}
+    100% {opacity: 0; left: -250px; top: -250px;}
+}
+
+#zines-planet {
+    position: absolute;
+    z-index: 6;
+    animation-name: zines-planet-anim;
+    animation-timing-function: linear;
+    animation-duration: 69s;
+    animation-iteration-count: infinite;
+}
+
+/* NEIGHBORS SECTION */
+
+@keyframes open-neighbors {
+    from {transform: translateX(222px);}
+    to {transform: translateX(0px);}
+}
+
+@keyframes close-neighbors {
+    from {transform: translateX(0px);}
+    to {transform: translateX(222px);}
+}
+
+#neighbors {
+    background-image: url(../imgs/index/bg-stars-invert.gif);
+    height: 100vh;
+    width: 222px;
+    position: absolute;
+    z-index: 7;
+    top: 0px;
+    right: 0px;
+    transform: translateX(222px);
+    animation-name: none;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#open-neighbors-btn {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    right: 3vw;
+    top: 9vh;
+    z-index: 1;
+}
+
+#close-neighbors-btn {
+    display: none;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    top: .3em;
+    right: .3em;
+    width: 2em;
+    height: 2em;
+    z-index: 8;
+}
+
+#x-icon-1 {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* CHANNELS SECTION */
+
+@keyframes open-channels {
+    from {transform: translateX(222px);}
+    to {transform: translateX(0px);}
+}
+
+@keyframes close-channels {
+    from {transform: translateX(0px);}
+    to {transform: translateX(222px);}
+}
+
+#channels {
+    background-image: url(../imgs/neighbors/neighbors-bg.gif);
+    height: 100vh;
+    width: 222px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateX(222px);
+    animation-name: none;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 7;
+}
+
+#open-channels-btn {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    left: 27vw;
+    top: 63vh;
+    z-index: 2;
+}
+
+#close-channels-btn {
+    display: none;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    z-index: 8;
+    top: .3em;
+    right: .3em;
+    width: 2em;
+    height: 2em;
+}
+
+#x-icon-2 {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    position: absolute;
+    bottom: .5em;
+    right: 1em;
+    z-index: -1;
+}
+
+footer p {
+    color: var(--base-light);
+    font-size: .75em;
+    font-family: CourierPolski1941;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+footer p a {
+    letter-spacing: -.5px;
+}
+
+
+/* MOBILE MEDIA QUERY */
+
+@media screen and (max-width: 1050px) {
+
+    /* body {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    } */
+
+    /* HEADER SECTION */
+
+    #logo {
+        width: 80vw;
+    }
+
+    #change-subtitle-btn-wrap {
+        width: 80vw;
+        height: 10vh;
+        left: 10vw;
+    }
+    
+    #change-subtitle-btn {
+        margin: 0;
+        z-index: 3;
+        width: 80vw;
+        height: 10vh;
+    }
+
+    header h1 {
+        font-size: .9em;
+    }
+
+    /* PLANETS SECTION */
+
+    #about-planet {
+        position: absolute;
+        top: 14vh;
+        left: -5em;
+        z-index: -2;
+    }
+
+    #channels-planet {
+        position: absolute;
+        left: 25vw;
+        top: 55vh;
+        z-index: -2;
+    }
+
+    #blog-planet {
+        position: absolute;
+        left: 55vw;
+        top: 33vh;
+        z-index: -2;
+    }
+
+    @keyframes zines-planet-anim {
+        0% {opacity: 0; left: -250px; top: -250px;}
+        50% {opacity: 0; left: 30vw; top: -250px;}
+        51% {opacity: 1; left: 30vw; top: -200px;}
+        71% {opacity: 1; left: 120vw; top: 66vh;}
+        72% {opacity: 0; left: 120vw; top: 66vh;}
+        100% {opacity: 0; left: -250px; top: -250px;}
+    }
+
+    #zines-planet {
+        animation-duration: 59s;
+    }
+
+    /* FOOTER SECTION */
+
+    footer {
+        bottom: .3em;
+        right: .6em;
+    }
+
+    footer p {
+        font-size: .6em;
+    }
+
+
+
+
+    /* DEBUG */
+
+    /* #about-planet, #zines-planet, #channels-planet {
+        outline: 1px solid red;
+    } */
+
+    #neighbors, #open-neighbors-btn, #close-neighbors-btn {
+        display: none;
+    }
+
+    /* CHANNELS SECTION */
+
+    #open-channels-btn {
+        left: 25vw;
+        top: 55vh;
+    }
+
+    #close-channels-btn {
+        display: none;
+        justify-content: center;
+        place-items: center;
+        position: absolute;
+        width: 3em;
+        height: 3em;
+        top: .2em;
+        right: .2em;
+    }
+
+    #x-icon-2 {
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    #zines-planet {
+        animation-duration: 49s;
+    }
+
+}
