@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
             neighborsContainer.innerHTML = '<iframe id="guestbook-planet" src="src/misc/planets/guestbook-planet.html" style="width: 175px; height: 175px;" frameBorder="0" scrolling="no"></iframe>';
             hyperlinksContainer.innerHTML = '<iframe id="hyperlinks-planet" src="src/misc/planets/hyperlinks-planet.html" style="width: 320px; height: 320px;" frameBorder="0" scrolling="no"></iframe>';
             indexMobileBackground.innerHTML = '';
-            neighborsSectionContainer.innerHTML = '<iframe src="src/misc/neighbors.html" style="width: 222px; height: 100vh;" scrolling="yes" frameBorder="0"></iframe>';
+            neighborsSectionContainer.innerHTML = '<iframe src="/neighbors.html" style="width: 222px; height: 100vh;" scrolling="yes" frameBorder="0"></iframe>';
             
-            channelsSectionContainer.innerHTML = ' <iframe id="channels-iframe" src="src/misc/channels.html" style="width: 222px; height: 100vh;" scrolling="yes" frameBorder="0"></iframe>';
+            channelsSectionContainer.innerHTML = ' <iframe id="channels-iframe" src="/channels.html" style="width: 222px; height: 100vh;" scrolling="yes" frameBorder="0"></iframe>';
         } else {
             // Hide desktop-specific elements
             guestbookContainer.innerHTML = '';
@@ -89,7 +89,8 @@ $(document).ready(function () {
             '"Blue Means Yes!"',
             '"Analog Software Distortions!"',
             '"Enhanced Chromatic Aberration!"',
-            '"Into the Liminal Void!"'
+            '"Into the Liminal Void!"',
+            '"Real Estate in Space!"'
             // Add more strings as needed
         ];
 
