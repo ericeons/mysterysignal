@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             indexMobileBackground.innerHTML = '<img id="mobile-background" src="src/imgs/index/index-bg.gif">';
             neighborsSectionContainer.innerHTML = '';
             
-            channelsSectionContainer.innerHTML = ' <iframe id="channels-iframe" src="src/misc/channels.html" style="width: 222px; height: 100vh;" scrolling="yes" frameBorder="0"></iframe>';
+            channelsSectionContainer.innerHTML = ' <iframe id="channels-iframe" src="/channels.html" style="width: 222px; height: 100vh;" scrolling="yes" frameBorder="0"></iframe>';
         }
     }
 
@@ -89,8 +89,7 @@ $(document).ready(function () {
             '"Blue Means Yes!"',
             '"Analog Software Distortions!"',
             '"Enhanced Chromatic Aberration!"',
-            '"Into the Liminal Void!"',
-            '"Real Estate in Space!"'
+            '"Into the Liminal Void!"'
             // Add more strings as needed
         ];
 
