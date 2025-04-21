@@ -89,7 +89,8 @@ $(document).ready(function () {
             '"Blue Means Yes!"',
             '"Analog Software Distortions!"',
             '"Enhanced Chromatic Aberration!"',
-            '"Into the Liminal Void!"'
+            '"Into the Liminal Void!"',
+            '"Drawing an Infinite Spiral!"'
             // Add more strings as needed
         ];
 

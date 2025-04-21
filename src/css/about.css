@@ -372,15 +372,15 @@ body {
     z-index: 1;
     animation-name: symbol-17-anim;
     animation-timing-function: linear;
-    animation-duration: 12s;
+    animation-duration: 21s;
     animation-iteration-count: infinite;
 }
 
 @keyframes seraph-animation {
-    25% {transform: translateX(16px); transform: translateY(4px);}
+    25% {transform: translateX(8px); transform: translateY(4px);}
     50% {transform: translateY(-8px); transform: translateX(-3px);}
     75% {transform: translateX(-4px); transform: translateY(-3px);}
-    100% {transform: translateY(12px); transform: translateX(4px);}
+    100% {transform: translateY(6px); transform: translateX(4px);}
 }
 
 #seraph-1 {
