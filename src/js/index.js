@@ -90,7 +90,8 @@ $(document).ready(function () {
             '"Analog Software Distortions!"',
             '"Enhanced Chromatic Aberration!"',
             '"Into the Liminal Void!"',
-            '"Drawing an Infinite Spiral!"'
+            '"Drawing an Infinite Spiral!"',
+            '"Navigating Consensus Reality!"'
             // Add more strings as needed
         ];
 

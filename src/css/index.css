@@ -301,18 +301,14 @@ footer p a {
         z-index: -2;
     }
 
-    /* @keyframes zines-planet-anim {
+    @keyframes zines-planet-anim {
         0% {opacity: 0; left: -250px; top: -250px;}
         10% {opacity: 0; left: 30vw; top: -250px;}
-        11% {opacity: 1; left: 30vw; top: -200px;}
-        81% {opacity: 1; left: 120vw; top: 66vh;}
-        82% {opacity: 0; left: 120vw; top: 66vh;}
+        41% {opacity: 1; left: 30vw; top: -200px;}
+        91% {opacity: 1; left: 120vw; top: 66vh;}
+        92% {opacity: 0; left: 120vw; top: 66vh;}
         100% {opacity: 0; left: -250px; top: -250px;}
-    } */
-
-    /* #zines-planet {
-        animation-duration: 8s;
-    } */
+    }
 
     /* FOOTER SECTION */
 
